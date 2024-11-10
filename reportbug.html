@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Report</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Report a Bug</h2>
+        <form id="bugReportForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="error_code">Error Code:</label>
+            <input type="text" id="error_code" name="error_code" required>
+
+            <label for="proposal">Tell us about your problem.</label>
+            <textarea id="proposal" name="proposal" rows="4" required></textarea>
+
+            <button type="button" onclick="sendEmail()">Send</button>
+        </form>
+        <div id="statusMessage"></div>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/0a74e3b84ed27bec33bcc77ee4fd2b05e4df6.js"></script>
+</body>
+</html>
